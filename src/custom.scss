@@ -1,0 +1,6 @@
+// Override default variables before the import
+// look here: https://getbootstrap.com/docs/4.6/getting-started/theming/#variable-defaults
+$body-bg: #fff;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
