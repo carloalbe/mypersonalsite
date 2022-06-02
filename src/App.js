@@ -18,12 +18,12 @@ import {
 
 
 function App() {
-  return (<div style={{minHeight:"100%"}}>
+  return (<div style={{}}>
 
     
   <MyNavbar/>
     <Router>
-<div className="App" style={{minHeight:"32rem"}}>
+<div className="App" style={{minHeight:"70vh"}}>
 <Routes>
   <Route exact path="/" element={<Home/>} />
   <Route path="/education" element={<Education/>}/>
@@ -37,7 +37,7 @@ function App() {
     
       
 
-    <MyFooter style={{left:'0',right:'0',bottom:0}}/>
+    <MyFooter style={{left:'0',right:'0',bottom:'0'}}/>
     
   </div>);
 }

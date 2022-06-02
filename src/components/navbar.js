@@ -5,7 +5,7 @@ import logo from "../img/foto cv croped.png"
 function MyNavbar(){
 
     return(
-      <Navbar bg="dark" variant="dark" expand="md" style={{height:"5rem",position:"sticked",width:"100%"}}>
+      <Navbar bg="dark" variant="dark" expand="md" style={{height:"10vh",position:"sticked",width:"100%"}}>
        <Container>
 
          <Navbar.Brand  href="/" style={{fontSize:'2rem',  fontFamily:'"papyrus", serif'}} >
