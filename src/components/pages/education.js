@@ -1,5 +1,6 @@
 import EducationCard from "../education_card";
 import React, {Component} from "react";
+import { shuffleArray } from "../../utils";
 
 
 class Education extends Component{
@@ -17,7 +18,7 @@ class Education extends Component{
             //text: "	http://www.ingegneriagestionale.unipi.it/index.php/it/" ,           
             'voto': "81", period: "2010-2015", institution: "Lice Scientifico \"Europa Unita\""}
         ],
-        colors : ["ffadad","ffd6a5","fdffb6","caffbf","9bf6ff","a0c4ff","bdb2ff","ffc6ff","fffffc"].map(c => ('#'.concat(c)))//['#FF499E','#D264B6','#A480CF','#779BE7','#49B6FF']
+        colors :shuffleArray(["ffadad","ffd6a5","fdffb6","caffbf","9bf6ff","a0c4ff","bdb2ff","ffc6ff"]).map(c => ('#'.concat(c)))//['#FF499E','#D264B6','#A480CF','#779BE7','#49B6FF']
     };
 
     render(){

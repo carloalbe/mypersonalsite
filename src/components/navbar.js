@@ -27,6 +27,8 @@ function MyNavbar(){
       <Nav.Link href="/work">Work</Nav.Link>
       <Nav.Link href="/projects">Projects</Nav.Link>
       <Nav.Link href="/education">Education</Nav.Link>
+      <Nav.Link href="/certification">Certifications</Nav.Link>
+
       </Nav>
       </Navbar.Collapse>
      

@@ -1,14 +1,7 @@
 import React, {Component} from "react";
 import SkillCard from "../skill_card";
+import { shuffleArray } from "../../utils";
 
-function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
-};
 
 
 class Projects extends Component{
@@ -68,7 +61,7 @@ class Projects extends Component{
         'tools': 'Excel, Word, Power point, LaTex. Gimp',
         'text': 'Textual and visual arrangement of various arguments. Great knowledge of the Office package. Find <a href="httpsdrive.google.comdrivefolders1U84DXiP1YGyvpIaifE-XJsutWStBYgOe">here</a> some works.</a>\n',
         'id': 10}],
-    colors : ["ffadad","ffd6a5","fdffb6","caffbf","9bf6ff","a0c4ff","bdb2ff","ffc6ff"].map(c => ('#'.concat(c)))//['#FF499E','#D264B6','#A480CF','#779BE7','#49B6FF']
+    colors : shuffleArray(["ffadad","ffd6a5","fdffb6","caffbf","9bf6ff","a0c4ff","bdb2ff","ffc6ff"]).map(c => ('#'.concat(c)))//['#FF499E','#D264B6','#A480CF','#779BE7','#49B6FF']
 };
 
 
