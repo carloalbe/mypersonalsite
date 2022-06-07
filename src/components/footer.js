@@ -5,7 +5,7 @@ import { SocialIcon } from 'react-social-icons';
 function MyFooter(){
     return (<>
     
-        <footer variant="dark" className="text-center text-white realtive-bottom" style={{backgroundColor:" black",margin:"auto",bottom:0,left:0,position:"relative",minHeight:"10vh", width:"100%"}}>
+        <footer variant="dark" className="text-center text-white realtive-bottom" style={{backgroundColor:" black",margin:"auto",bottom:0,left:0,position:"relative", width:"100%"}}>
   {/* Grid container */}
   <div variant="dark" className="container pt-4">
     {/* Section: Social media */}

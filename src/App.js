@@ -38,11 +38,11 @@ function App() {
   return (<div style={{}}>
 
     
-  <MyNavbar/>
+  <MyNavbar  style={{height:"10vh"}} />
     <Router>
 <div className="App" style={{minHeight:"70vh"}}>
 <Routes>
-  <Route exact path="/" element={<Home/>} />
+  <Route exact path="/" element={<Home/>} style={{backgroundColor:"black"}}/>
   <Route path="/education" element={<Education/>}/>
   <Route path="/work" element={<Work/>}/>
   <Route path="/projects" element={<Projects/>}/>
@@ -55,7 +55,7 @@ function App() {
     
       
 
-    <MyFooter style={{left:'0',right:'0',bottom:'0'}}/>
+    <MyFooter style={{height:"20vh", left:'0',right:'0',bottom:'0'}}/>
     
   </div>);
 }
