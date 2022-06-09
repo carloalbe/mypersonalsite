@@ -10,7 +10,11 @@ class Home extends Component{
 state = {
         mouseX: 0,
         mouseY: 0,
-        rotation: 20
+        dX: 0,
+        dY:0,
+        rotation: 0,
+        faceLeft: 0,
+        faceTop: 0,
 };
 handleMouseMove = event => {
     this.setState({
@@ -18,18 +22,17 @@ handleMouseMove = event => {
       mouseY: event.clientY
      });
       var face = document.getElementById("bigFace");
-      var dX = event.clientX - face.offsetLeft+ face.offsetWidth/2;
-      var dY = event.clientY - face.offsetTop + face.offsetHeight/2;
-      
-      var modifier = 0 
-      if (dY > 0){modifier = 90} else{modifier = 0}
-      this.state.rotation = degree + 180;
-      var degree = (Math.atan(dX / dY) * 360 / (2*Math.PI))+modifier;
-      face.style.transform = "rotate("+degree+"deg)"
+      this.state.faceLeft = face.offsetLeft+ face.offsetWidth/2;
+      this.state.faceTop = face.offsetTop + face.offsetHeight/2;
+      var dX = event.clientX - this.state.faceLeft;
+      var dY = event.clientY - this.state.faceTop;
+      this.state.dX = dX;
+      this.state.dY = dY;
+      var degree = (Math.atan(- dX / dY) * 180 / Math.PI);
+      if (dY > 0){degree += 180}
+      this.state.rotation = degree;
 
-    
-
-      
+      face.style.transform = "rotate("+degree+"deg)" 
     
   };
 render(){
@@ -39,10 +42,11 @@ render(){
     return (
        <div  onMouseMove={(ev)=> this.handleMouseMove(ev)} style={{backgroundColor:'black',backgroundImage:"linear-gradient(to bottom, grey,black)", minHeight:"70vh", paddingTop:"10vh"}}>
            <Container > <Row>
-<Col><img id="bigFace" src={logo} width="40%"/></Col>
-<Col><h1 style={{color:"white", textAlign:'left'}}>Hi, here you can discover about me, my works ad my interests!!! <br/>
+<Col><img id="bigFace" src={logo} width="40%" style={{margin:"10vh"}}/></Col>
+<Col><h1 style={{color:"white", textAlign:'left'}}>Hi, here you can discover about me, my works ad my interests!!! <br/><br/>
 Enjoy the visit and don not esitate to contact me for collaboration or other stuffs...
-{this.state.rotation}
+
+{}
 </h1>
 </Col>
            </Row></Container>
