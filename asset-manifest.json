@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c5c7415f.css",
+    "main.js": "/static/js/main.44d953f3.js",
+    "static/js/787.7cb2e3e1.chunk.js": "/static/js/787.7cb2e3e1.chunk.js",
+    "static/media/foto cv croped.png": "/static/media/foto cv croped.cd210b51d1142c4935c2.png",
+    "static/media/microsoft-certified-azure-data-fundamentals.png": "/static/media/microsoft-certified-azure-data-fundamentals.763cd12e64b9350959ab.png",
+    "static/media/microsoft-certified-azure-fundamentals.png": "/static/media/microsoft-certified-azure-fundamentals.277361887c5c8d3d1d8e.png",
+    "static/media/microsoft-certified-azure-ai-fundamentals.png": "/static/media/microsoft-certified-azure-ai-fundamentals.49fb25a897baa456ba3a.png",
+    "static/media/microsoft-certified-security-compliance-and-identity-fundamentals.png": "/static/media/microsoft-certified-security-compliance-and-identity-fundamentals.3030a877e2b790e6bb27.png",
+    "static/media/microsoft-certified-azure-data-engineer-associate.png": "/static/media/microsoft-certified-azure-data-engineer-associate.15de04097f1d642c1e39.png",
+    "index.html": "/index.html",
+    "main.c5c7415f.css.map": "/static/css/main.c5c7415f.css.map",
+    "main.44d953f3.js.map": "/static/js/main.44d953f3.js.map",
+    "787.7cb2e3e1.chunk.js.map": "/static/js/787.7cb2e3e1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5c7415f.css",
+    "static/js/main.44d953f3.js"
+  ]
+}
