@@ -19,7 +19,7 @@ class Work extends Component{
             text: "Pizza delivery to customers’ houses, driving car",
              period: "2020-2021", institution: "Civico 3 Pizzeria"}
         ],
-        colors : shuffleArray(["ffadad","ffd6a5","fdffb6","caffbf","9bf6ff","a0c4ff","bdb2ff","ffc6ff","fffffc"]).map(c => ('#'.concat(c)))//['#FF499E','#D264B6','#A480CF','#779BE7','#49B6FF']
+        colors : shuffleArray(["ffadad","ffd6a5","fdffb6","caffbf","9bf6ff","a0c4ff","bdb2ff","ffc6ff"]).map(c => ('#'.concat(c)))//['#FF499E','#D264B6','#A480CF','#779BE7','#49B6FF']
     };
 
 

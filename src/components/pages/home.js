@@ -44,7 +44,7 @@ render(){
            <Container > <Row>
 <Col><img id="bigFace" src={logo} width="40%" style={{margin:"10vh"}}/></Col>
 <Col><h1 style={{color:"white", textAlign:'left'}}>Hi, here you can discover about me, my works ad my interests!!! <br/><br/>
-Enjoy the visit and don not esitate to contact me for collaboration or other stuffs...
+Enjoy the visit and do not esitate to contact me for collaboration or other stuffs...
 
 {}
 </h1>
