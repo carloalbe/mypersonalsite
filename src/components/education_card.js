@@ -1,9 +1,12 @@
-import {Card, Col, Row} from "react-bootstrap";
+import {Card, Col, Container, Row} from "react-bootstrap";
 
 
 function EducationCard(props){
     return (
-    <Card style={{ margin: "3rem 10rem 3rem 10rem", textAlign: "left" }}>
+      <Container >
+
+     
+    <Card style={{textAlign: "left", marginTop: "5vh"}}> 
         <Card.Header style={{ backgroundColor: props.color }}>
           <Row><Col lg="2"> {props.period}</Col>
 
@@ -30,7 +33,7 @@ function EducationCard(props){
           
        </Card.Text>
         </Card.Body>
-      </Card>
+      </Card> </Container>
       )
 
 

@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import WorkCard from "../work_card";
 import { shuffleArray } from "../../utils";
 
+import { Container, Row } from "react-bootstrap";
 
 class Work extends Component{
     state = {
@@ -26,7 +27,7 @@ class Work extends Component{
     render(){
         return (
             <>
-            <div>
+            <Container>
                 {
                     this.state.works.map(work => (
                          <WorkCard
@@ -40,7 +41,7 @@ class Work extends Component{
                     ))
                 }
                 
-                </div>
+                </Container>
             </>
         )
     }

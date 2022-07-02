@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import SkillCard from "../skill_card";
 import { shuffleArray } from "../../utils";
 
+import { Container, Row } from "react-bootstrap";
 
 
 class Projects extends Component{
@@ -68,7 +69,7 @@ class Projects extends Component{
     render(){
 
     return (<>
-     <div>
+     <Container>
      {
         this.state.skills.map(skill => (
                 <SkillCard
@@ -82,7 +83,7 @@ class Projects extends Component{
         ))
     }
 
-     </div>
+     </Container>
     
     </>)
     }

@@ -42,7 +42,7 @@ render(){
     return (
        <div  onMouseMove={(ev)=> this.handleMouseMove(ev)} style={{backgroundColor:'black',backgroundImage:"linear-gradient(to bottom, grey,black)", minHeight:"70vh", paddingTop:"10vh"}}>
            <Container > <Row>
-<Col><img id="bigFace" src={logo} width="40%" style={{margin:"10vh"}}/></Col>
+<Col><img id="bigFace" src={logo} width="60%" style={{margin:"10%"}}/></Col>
 <Col><h1 style={{color:"white", textAlign:'left'}}>Hi, here you can discover about me, my works ad my interests!!! <br/><br/>
 Enjoy the visit and do not esitate to contact me for collaboration or other stuffs...
 

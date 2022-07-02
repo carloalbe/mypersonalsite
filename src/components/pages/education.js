@@ -1,6 +1,7 @@
 import EducationCard from "../education_card";
 import React, {Component} from "react";
 import { shuffleArray } from "../../utils";
+import { Container, Row } from "react-bootstrap";
 
 
 class Education extends Component{
@@ -24,10 +25,10 @@ class Education extends Component{
     render(){
         return (
             <>
-            <div>
+            <Container>
                 {
                     this.state.educations.map(education => (
-                         <EducationCard
+                         <Row><EducationCard
                             key={education.id}
                             voto={education.voto}
                             period={education.period}
@@ -35,11 +36,11 @@ class Education extends Component{
                             institution={education.institution}
                             text={education.text}
                             title={education.title}
-                         />
+                         /></Row>
                     ))
                 }
                 
-                </div>
+                </Container>
             </>
     
         )

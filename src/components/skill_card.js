@@ -1,9 +1,10 @@
-import {Card, Col, Row} from "react-bootstrap";
+import {Card, Col, Row, Container} from "react-bootstrap";
 
 
 function SkillCard(props){
     return (
-    <Card style={{ margin: "3rem 10rem 3rem 10rem", textAlign: "left" }}>
+      <Container  class="mt-4">
+    <Card style={{ textAlign: "left", marginTop: "5vh" }}>
         <Card.Header style={{ backgroundColor: props.color }}>
           <Row><Col lg="2"> {props.period}</Col>
 
@@ -24,7 +25,7 @@ function SkillCard(props){
           
        </Card.Text>
         </Card.Body>
-      </Card>
+      </Card></Container>
       )
 
 
