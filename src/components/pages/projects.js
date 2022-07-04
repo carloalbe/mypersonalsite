@@ -69,7 +69,7 @@ class Projects extends Component{
     render(){
 
     return (<>
-     <Container>
+     <Container  style={{marginBottom:"5vh"}}>
      {
         this.state.skills.map(skill => (
                 <SkillCard

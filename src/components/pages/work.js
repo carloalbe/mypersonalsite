@@ -27,7 +27,7 @@ class Work extends Component{
     render(){
         return (
             <>
-            <Container>
+            <Container  style={{marginBottom:"5vh"}}>
                 {
                     this.state.works.map(work => (
                          <WorkCard

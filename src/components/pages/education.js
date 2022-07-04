@@ -25,7 +25,7 @@ class Education extends Component{
     render(){
         return (
             <>
-            <Container>
+            <Container style={{marginBottom:"5vh"}}>
                 {
                     this.state.educations.map(education => (
                          <Row><EducationCard

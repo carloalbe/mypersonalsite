@@ -40,7 +40,7 @@ function App() {
     
   <MyNavbar  style={{height:"10vh"}} />
     <Router>
-<div className="App" style={{minHeight:"70vh"}}>
+<div className="App" style={{minHeight:"72vh"}}>
 <Routes>
   <Route exact path="/" element={<Home/>} style={{backgroundColor:"black"}}/>
   <Route path="/education" element={<Education/>}/>
