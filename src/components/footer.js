@@ -35,8 +35,13 @@ function MyFooter(){
     url="mailto:carloalbertocarrucciu@gmail.com" 
     bgColor="grey"
     style={{margin:"10px"}}/>
-    <Col/>
     
+    
+    <SocialIcon 
+    url="https://codepen.io/carloalbe" 
+    bgColor="grey"
+    style={{margin:"10px"}}/>
+    <Col/>
     
 </div>
 
